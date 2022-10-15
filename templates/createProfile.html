@@ -1,0 +1,11 @@
+{% extends 'index.html' %} <!----Varan 64-->
+{% load static %}
+{% block content %}
+    <div class="container">
+        <form action="" method="POST" class=" w-50 m-auto text-light mt-5" enctype="multipart/form-data"> 
+            {% csrf_token %}
+            {{form}}
+            <input type="submit" value="Oluştur" class="btn btn-primary mt-2">
+        </form>
+    </div>
+{% endblock content %}
